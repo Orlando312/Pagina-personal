@@ -1,26 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web</title>
-  <link rel="stylesheet" href="css/estilosPersonalizados.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orlando Edizon | Portafolio</title>
+  <link rel="stylesheet" href="css/estilosPersonalizados.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a mi página web</h1>
-    <p>Hecha con amor y GitHub Pages 💻✨</p>
-  </header>
+    <header class="landing" id="inicio">
+        <nav class="menu">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#habilidades">habilidades</a></li>
+          </ul>
+        </nav>
+      
+        <div class="contenedor" data-aos="fade-up">
+          <img src="img/FotoPerfil.jpeg" alt="Foto de Orlando" class="foto-perfil" />
+          <h1>Orlando Edizon Del Villar Silva</h1>
+          <p><span id="escribiendo"></span><span class="cursor">|</span></p>
+          
+          <div class="redes">
+            <a href="https://github.com/Orlando312" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/orlando-edizon-del-villar-silva-1a549b360" target="_blank">LinkedIn</a>
+          </div>
+          
+          <a href="#" class="boton-cv">Mi CV</a>
+          <a href="#proyectos" class="boton-vermas">Ver más</a>
+        </div>
+      </header>      
 
-  <main>
-    <button id="btnSaludo">Haz clic aquí</button>
-    <p id="mensaje"></p>
-  </main>
+  <section id="proyectos" class="portafolio">
+    <h2>Mis Proyectos</h2>
+    <div class="tarjetas">
+        <div class="tarjeta">
+          <img src="img/firma.jpg" alt="Proyecto 1" />
+          <div class="contenido">
+            <h3>Control de Firmas</h3>
+            <p>App web en .NET para gestionar firmas digitales de estudiantes en trámites de postgrado.</p>
+            <a href="https://github.com/Orlando312/FirmasPostgrado" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Ver Demo</a>
+          </div>
+        </div>
+      
+        <div class="tarjeta">
+          <img src="img/señales.jpg" alt="Proyecto 2" />
+          <div class="contenido">
+            <h3>Simulador de Tráfico</h3>
+            <p>Simulación del flujo vehicular con análisis visual usando imágenes divididas en secciones.</p>
+            <a href="https://github.com/Orlando312/SimuladorTráfico" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Ver Demo</a>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+  <section id="formacion" class="formacion">
+    <h2>Formación & Experiencia</h2>
+    <ul class="linea-tiempo">
+      <li><strong>2021 - Presente:</strong> Estudiante de Ingeniería</li>
+      <li><strong>2020:</strong> Curso de Desarrollo Web</li>
+    </ul>
+
+    <h2>Habilidades</h2>
+    <div id="habilidades" class="habilidades">
+      <div><label>HTML</label><div class="barra"><div class="nivel" style="width: 90%;"></div></div></div>
+      <div><label>CSS</label><div class="barra"><div class="nivel" style="width: 80%;"></div></div></div>
+      <div><label>JavaScript</label><div class="barra"><div class="nivel" style="width: 70%;"></div></div></div>
+      <div><label>C#</label><div class="barra"><div class="nivel" style="width: 65%;"></div></div></div>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 - Creado por TuNombre</p>
+    <p>© 2025 Orlando Edizon Del Villar Silva</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/javaScript.js"></script>
+
 </body>
 </html>
