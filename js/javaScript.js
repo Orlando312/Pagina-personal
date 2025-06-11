@@ -5,8 +5,10 @@ const frases = [
     "Me encantan los deportes y actividad física",
     "Proactivo",
     "Apasionado de los juegos de mesa",
-    "Amante de los paisajes selváticos"
-  ];
+    "Amante de los paisajes selváticos",
+    "Amante de los gatos",
+    "Mi gato es mi compañero de código"
+  ];  
   
   let i = 0;
   let j = 0;
